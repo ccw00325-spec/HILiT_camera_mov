@@ -1,0 +1,21 @@
+{
+  "web": [
+    "packages/shared-types",
+    "packages/tracking-core/src/follow-camera.ts",
+    "packages/tracking-core/src/follow-plan.ts",
+    "packages/tracking-core/src/follow-refine.ts",
+    "packages/tracking-core/src/one-euro.ts",
+    "packages/tracking-core/src/trajectory.ts",
+    "packages/tracking-core/src/enhance.ts",
+    "packages/tracking-core/src/hdr-tonemap.ts",
+    "apps/web/src/lib/clip-timeline.ts",
+    "apps/web/src/lib/zoom-rhythm.ts",
+    "apps/web/src/lib/timeline-draw.ts"
+  ],
+  "android": [
+    "apps/android/app/src/main/java/app/hilit/mobile/NativeFollowCamera.java",
+    "apps/android/app/src/main/java/app/hilit/mobile/FollowCameraEffect.java",
+    "apps/android/app/src/main/java/app/hilit/mobile/FollowMp4Exporter.java",
+    "apps/android/app/src/main/java/app/hilit/mobile/FollowRefine.java"
+  ]
+}

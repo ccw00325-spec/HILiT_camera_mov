@@ -1,0 +1,77 @@
+{
+  "note": "Synthetic regression baseline of the product camera (A). Not real-footage quality.",
+  "seeds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "A": {
+    "stop_go": {
+      "accRms": 0.61,
+      "accP95": 0.648,
+      "jerkP95": 20.225,
+      "zoomAccP95": 0,
+      "panReversalsPerMin": 0,
+      "maxStepPct": 1.125,
+      "insideRate": 100,
+      "centerErrP95": 0.083,
+      "leadLagSec": 0
+    },
+    "direction_change": {
+      "accRms": 2.397,
+      "accP95": 6.642,
+      "jerkP95": 181.825,
+      "zoomAccP95": 0,
+      "panReversalsPerMin": 18.8,
+      "maxStepPct": 2.605,
+      "insideRate": 100,
+      "centerErrP95": 0.114,
+      "leadLagSec": 0
+    },
+    "dance_sway": {
+      "accRms": 10.843,
+      "accP95": 36.02,
+      "jerkP95": 1071.25,
+      "zoomAccP95": 0,
+      "panReversalsPerMin": 56.3,
+      "maxStepPct": 8.89,
+      "insideRate": 99.843,
+      "centerErrP95": 0.129,
+      "leadLagSec": 0
+    },
+    "sprint": {
+      "accRms": 5.111,
+      "accP95": 5.159,
+      "jerkP95": 155,
+      "zoomAccP95": 0,
+      "panReversalsPerMin": 54.375,
+      "maxStepPct": 130.502,
+      "insideRate": 98.75,
+      "centerErrP95": 0.127,
+      "leadLagSec": 0
+    },
+    "stage_noise": {
+      "accRms": 1.243,
+      "accP95": 1.704,
+      "jerkP95": 55.675,
+      "zoomAccP95": 0,
+      "panReversalsPerMin": 12.2,
+      "maxStepPct": 2.135,
+      "insideRate": 100,
+      "centerErrP95": 0.145,
+      "leadLagSec": 0.05
+    },
+    "loss_recovery": {
+      "accRms": 0.472,
+      "accP95": 0.295,
+      "jerkP95": 11.6,
+      "zoomAccP95": 0,
+      "panReversalsPerMin": 0,
+      "maxStepPct": 29.328,
+      "insideRate": 79.04,
+      "centerErrP95": 0.7,
+      "leadLagSec": 0
+    }
+  }
+}

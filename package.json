@@ -1,0 +1,16 @@
+{
+  "name": "hilit-camera-mov",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "HILiT Camera Mov. Noncommercial use only; commercial use requires prior written approval: ccw00325@gmail.com",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "조찬우 (Chanwoo Cho) <ccw00325@gmail.com>",
+  "homepage": "https://github.com/ccw00325-spec/HILiT_camera_mov",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node tools/self-test.mjs && npm run ab -- --check",
+    "ab": "node --experimental-strip-types --no-warnings --import ./eval/cam-root-loader.mjs eval/ab-compare.mjs",
+    "tune": "node --experimental-strip-types --no-warnings --import ./eval/cam-root-loader.mjs eval/tune.mjs"
+  }
+}
