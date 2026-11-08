@@ -1075,8 +1075,13 @@ function zoomAnchorPoint(
   const track = trackingUsable(clip);
   if (!track) return null;
   const box = boxAt(track, sourceTime);
-  return { x: box.x + box.width / 2, y: box.y + box.height / 2 };
+  // 세로는 상자 한가운데(허리)가 아니라 얼굴 높이를 기준으로 잡는다. 확대 중심은 화면에서 같은 자리에 남으므로
+  // 허리를 잡으면 2배 확대 때 머리가 화면 위로 잘렸다(2026-11-09 운영 시험, 16:9·전신 구도). 얼굴이 남고 아래쪽이 잘린다.
+  return { x: box.x + box.width / 2, y: box.y + box.height * ZOOM_FACE_ANCHOR_Y };
 }
+
+/** 사람 상자 위에서부터 머리 가운데까지의 비율. 서 있는 전신 상자에서 머리는 키의 약 1/8 이라 그 절반쯤이다. 3배 확대까지 머리 꼭대기가 남는다. */
+const ZOOM_FACE_ANCHOR_Y = 0.06;
 
 function zoomKeyFor(project: TimelineProject, clip: TimelineClip, anchor: ZoomAnchor): string {
   const index = project.clips.findIndex((row) => row.id === clip.id);
